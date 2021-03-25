@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "D+wRUYv3O0s3M9gIJ5jQ9kE4jrsCwTuQoZ2kvITvIybC9X0xGyxvwhPggFjTAe7NUiVcaTFnJifUMKAZ4Zt6EQ==",
-  "success": true,
-  "projectFilePath": "C:\\DDP\\Productos.Domain.Test\\Productos.Domain.Test.csproj",
+  "dgSpecHash": "uM2WsrgDMSynnduPwFzxJTV6O3l/6mfLk9vxwwCjIoL+rFHWTbkmgk1UgQ1rCVWH4hDB9K4mt+PcmsrfJqK0nA==",
+  "success": false,
+  "projectFilePath": "C:\\DDP\\Parcial\\Productos.Domain.Test\\Productos.Domain.Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\JOHAN\\.nuget\\packages\\microsoft.codecoverage\\16.5.0\\microsoft.codecoverage.16.5.0.nupkg.sha512",
     "C:\\Users\\JOHAN\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",
@@ -68,5 +68,15 @@
     "C:\\Users\\JOHAN\\.nuget\\packages\\system.xml.xpath\\4.3.0\\system.xml.xpath.4.3.0.nupkg.sha512",
     "C:\\Users\\JOHAN\\.nuget\\packages\\system.xml.xpath.xmldocument\\4.3.0\\system.xml.xpath.xmldocument.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "No se encuentra el proyecto \"C:\\DDP\\Parcial\\Parcial.Producto.Domain\\Parcial.Producto.Domain.csproj\". Compruebe que la referencia al proyecto sea válida y que exista el archivo de proyecto.",
+      "libraryId": "C:\\DDP\\Parcial\\Parcial.Producto.Domain\\Parcial.Producto.Domain.csproj",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
 }

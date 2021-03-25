@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "c9XX7OJLBIqfl2F9amUWx6K5HSVXNESk5RQ4T75CChB03uP5bDBfnv/W1C/B/u+9hkZHI/Jb5nJLI/i4/rGoeg==",
+  "dgSpecHash": "rzO7BJYi+H5rAcdttmeRts/H9I2fMtUOM4srpwHVMo9gGfU6+o69Rqq3rGp9yAtMH4QOzxrQ5r+GOr1++KuHdA==",
   "success": true,
-  "projectFilePath": "C:\\DDP\\Parcial.Producto.Domain\\Parcial.Producto.Domain.csproj",
+  "projectFilePath": "C:\\DDP\\Parcial\\Parcial.Domain\\Parcial.Producto.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
