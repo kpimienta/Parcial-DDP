@@ -20,7 +20,7 @@ namespace Productos.Domain.Test
          HU01	Entrada de producto
          DADO	Un registro de entrada de productos
          CUANDO	El registro sea menor o igual a cero
-        ENTONCES	El sistema mostrará un mensaje diciendo “Error, el registro debe ser mayor a cero”
+        ENTONCES	El sistema mostrará un mensaje diciendo “Entrada menor o igual a 0”
         */
 
         [Test]
@@ -29,7 +29,7 @@ namespace Productos.Domain.Test
 
             var producto = new ProductoSimple("1", "Pan", 3000, 0, "Combo");
             var resultado = producto.Agregar(0);
-            Assert.AreEqual($"Error, el registro debe ser mayor a cero", resultado);
+            Assert.AreEqual($"Entrada menor o igual a 0", resultado);
 
         }
 

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Parcial.Producto.Domain
 {
-    public class ProductoCompuesto : Productos;
+    public class ProductoCompuesto : Productos
     {
         private List<Productos> Producto { get; set; }
         public ProductoCompuesto(string id, string nombre, decimal precio, List<Productos> productos) : base(id, nombre, 0, precio)

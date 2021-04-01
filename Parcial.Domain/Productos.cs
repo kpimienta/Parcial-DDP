@@ -6,7 +6,7 @@ namespace Parcial.Producto.Domain
 {
     public abstract class Productos
     {
-        public Productos(string id, string nombre, int costo,  decimal precio)
+        public Productos(string id, string nombre, decimal costo,  decimal precio)
         {
             Id = id;
             Nombre = nombre;
@@ -16,7 +16,7 @@ namespace Parcial.Producto.Domain
 
         public string Id { get; }
         public string Nombre { get; }
-        public int Costo { get; protected set; }
+        public decimal Costo { get; protected set; }
         public decimal Precio { get; protected set;  }
 
         

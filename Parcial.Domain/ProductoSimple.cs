@@ -25,7 +25,7 @@ namespace Parcial.Producto.Domain
                 this.Cantidad += cantidad;
                 return $"{Nombre} Nueva cantidad: {Cantidad}";
             }
-            return "Error, el registro debe ser mayor a cero";
+            return "Entrada menor o igual a 0";
         }
 
         public override string RegistrarSalida(int cantidad)
