@@ -7,41 +7,41 @@ namespace Parcial.Producto.Domain
     public class ProductoSimple :  Productos
     {
         
-        public decimal PrecioFinal { get; protected set; }
+        
+        public int Cantidad { get; private set; }
+        private string Tipo { get; set; }
 
-        public ProductoSimple(string id, string nombre, int cantidad, decimal costo, decimal precioFinal) : base(id, nombre, cantidad, costo)
+
+        public ProductoSimple(string id, string nombre, decimal costo, decimal precio, string tipo) : base(id, nombre, costo, precio)
         {
-
+            Cantidad = 0;
+            Tipo = tipo;
         }
 
-        public override string Agregar(int valor, string nombre)
+        public string Agregar(int cantidad)
         {
-            if (valor <= 0)
+            if (cantidad >= 0)
             {
-                return "Error, el registro debe ser mayor a cero";
+                this.Cantidad += cantidad;
+                return $"{Nombre} Nueva cantidad: {Cantidad}";
             }
-            if ( Cantidad == 0 && valor > 0)
-            {
-                Cantidad += valor;
-                return $"Se agregó correctamente";
-            }
-            throw new NotImplementedException();
+            return "Error, el registro debe ser mayor a cero";
         }
 
-        public string AumentarCantidad(int val, bool entrada)
+        public override string RegistrarSalida(int cantidad)
         {
-            
-            if ( entrada == true )
+            if (cantidad >= 0)
             {
-                Cantidad = Cantidad + val;
-                return $"la cantidad del producto: {Nombre} es {Cantidad} ";
+                this.Cantidad -= cantidad;
+                return $"Nueva salida: {Nombre}, cantidad:{cantidad}, costo:{getCosto()}, precio:{Precio}";
             }
-            if(entrada == false)
-            {
-                Cantidad = Cantidad - val;
-                return $"la cantidad del producto: {Nombre} es {Cantidad} ";
-            }
-            throw new NotImplementedException();
+            return "Error, Salida menor o igual a 0";
         }
+
+        public override decimal getCosto()
+        {
+            return Costo;
+        }
+    }
     }
 }

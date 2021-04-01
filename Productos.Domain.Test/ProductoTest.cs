@@ -27,8 +27,8 @@ namespace Productos.Domain.Test
         public void NoPuedeRegistrarCantidadMenoroIgualaCero()
         {
 
-            var producto = new ProductoSimple("1", "Pan", 0, 2000, 5000);
-            var resultado = producto.Agregar(0, "pan");
+            var producto = new ProductoSimple("1", "Pan", 3000, 0, "Combo");
+            var resultado = producto.Agregar(0);
             Assert.AreEqual($"Error, el registro debe ser mayor a cero", resultado);
 
         }
@@ -45,10 +45,44 @@ namespace Productos.Domain.Test
         public void PuedeRegistrarCantidadMayoraCero()
         {
 
-            var producto = new ProductoSimple("1", "Pan", 2, 2000, 5000);
-            var resultado = producto.Agregar(2, "pan");
-            Assert.AreEqual($"Registro exitoso", resultado);
+            var producto = new ProductoSimple("1", "Pan", 2000, 4000, "Preparar");
+            var resultado = producto.Agregar(2);
+            Assert.AreEqual($"Se agregó correctamente", resultado);
 
+        }
+
+        /*
+         DADO que se ha registrado un nuevo producto simple
+         CUANDO se ingrese el producto al inventario
+         ENTONCES el sistema deberá aumentar la cantidad existente 
+         */
+        [Test]
+        public void EntradaDebeAumentarCantidad()
+        {
+            ProductoSimple prod = new ProductoSimple("001", "Salchicha", 1000, 0, "Preparacion");
+
+            //Act
+            var respuesta = prod.Agregar(10);
+
+            //Assert
+            Assert.AreEqual("Salchicha Nueva cantidad: 10", respuesta);
+        }
+
+        /*
+      DADO que se ha registrado un nuevo producto simple
+      CUANDO se registre una salida
+      ENTONCES el sistema deberá disminuir la cantidad existente en inventario
+      */
+        [Test]
+        public void SalidaProductoSimpleDebeDisminuirCantidad()
+        {
+            //Arrange
+            ProductoSimple prod = new ProductoSimple("002", "CocaCola", 1000, 3000, "Venta");
+            //Act
+            prod.Agregar(10);
+            var respuesta = prod.RegistrarSalida(7);
+            //Assert
+            Assert.AreEqual("Nueva salida: Salchicha, cantidad:7, costo:1000, precio:3000", respuesta);
         }
 
     }

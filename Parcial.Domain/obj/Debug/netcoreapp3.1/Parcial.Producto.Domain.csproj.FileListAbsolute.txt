@@ -1,0 +1,9 @@
+C:\DDP\Parcial\Parcial.Domain\bin\Debug\netcoreapp3.1\Parcial.Producto.Domain.deps.json
+C:\DDP\Parcial\Parcial.Domain\bin\Debug\netcoreapp3.1\Parcial.Producto.Domain.dll
+C:\DDP\Parcial\Parcial.Domain\bin\Debug\netcoreapp3.1\Parcial.Producto.Domain.pdb
+C:\DDP\Parcial\Parcial.Domain\obj\Debug\netcoreapp3.1\Parcial.Producto.Domain.csprojAssemblyReference.cache
+C:\DDP\Parcial\Parcial.Domain\obj\Debug\netcoreapp3.1\Parcial.Producto.Domain.AssemblyInfoInputs.cache
+C:\DDP\Parcial\Parcial.Domain\obj\Debug\netcoreapp3.1\Parcial.Producto.Domain.AssemblyInfo.cs
+C:\DDP\Parcial\Parcial.Domain\obj\Debug\netcoreapp3.1\Parcial.Producto.Domain.csproj.CoreCompileInputs.cache
+C:\DDP\Parcial\Parcial.Domain\obj\Debug\netcoreapp3.1\Parcial.Producto.Domain.dll
+C:\DDP\Parcial\Parcial.Domain\obj\Debug\netcoreapp3.1\Parcial.Producto.Domain.pdb
